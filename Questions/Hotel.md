@@ -16,3 +16,7 @@ There are at least five mistakes in the initial design. The engineer also did no
 1) Column names and table names: camel case instead of underscores (startDate vs. start_date).
 2) Indexes: PK for clustered index that is also primary key and IX for non-clustered indexes + table name + column names in the order they appear + inc if there is one or more include column. For example, a table named order might have the indexes PK_order_orderId and IX_order_customerId_inc.
 3) Data types: Identity columns should be either INT or BIGINT, strings should be VARCHAR unless there is a concern for special characters, and date fields should capture what they need -  do not default everything to DATETIME.
+4) Create Hotel Room Table : roomNumber ( PK), roomType, Price : king type roomnumber is start with 101-199 and queen type is start with 201-299.
+5) payment table: paymentId, roomType,reserveationDate, startDate,endDate,totalAmount
+
+
